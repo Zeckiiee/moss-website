@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-::-webkit-scrollbar {
-    display: none;
-  }
 body{
     overflow-x: hidden;
+}
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 8px; 
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(26, 32, 44, 0.5); 
+    border-radius: 4px;
+  }
 }
